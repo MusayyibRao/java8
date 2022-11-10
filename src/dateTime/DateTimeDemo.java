@@ -6,29 +6,29 @@ import java.util.TimeZone;
 
 public class DateTimeDemo {
 
-public static void main(String args[])	
-		
-{
-	
-//String pattern="dd/MMM/yyyy";
-//String pattern="dd/MMM/yyyy HH:mm:ss a";
-//String pattern="dd/MM/yyyy HH:mm:ss a";   // time pattern 24 hours    
-//	String pattern="dd/MMM/yyyy h:mm:ss a";  // time pattern 12 hours
-	String pattern="dd-MM-yyyy h:mm:ss a";  // time pattern 12 hours
+	public static void main(String args[])	
 
-	SimpleDateFormat simple=new SimpleDateFormat(pattern);
+	{
 
-simple.setTimeZone(TimeZone.getTimeZone("Asia/Kolkata"));
+		//String pattern="dd/MMM/yyyy";
+		//String pattern="dd/MMM/yyyy HH:mm:ss a";
+		//String pattern="dd/MM/yyyy HH:mm:ss a";   // time pattern 24 hours    
+		//	String pattern="dd/MMM/yyyy h:mm:ss a";  // time pattern 12 hours
+		String pattern="dd-MM-yyyy h:mm:ss a";  // time pattern 12 hours
 
-Calendar calender=Calendar.getInstance();
+		SimpleDateFormat simple=new SimpleDateFormat(pattern);
 
-String date=simple.format(calender.getTime());
+		simple.setTimeZone(TimeZone.getTimeZone("Asia/Kolkata"));
 
+		Calendar calender=Calendar.getInstance();
 
-System.out.println(date);
+		String date=simple.format(calender.getTime());
 
 
-	
+		System.out.println(date);
 
-}
+
+
+
+	}
 }
